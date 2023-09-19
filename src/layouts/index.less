@@ -1,0 +1,94 @@
+html, body{
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+#root{
+  height: 100%;
+  .ant-layout{
+    background-color: #f0f2f7;
+    height: 100%;
+    .ant-layout-sider{
+      background: #fff;
+    }
+    .ant-layout-header{
+      .breadcrumb-title{
+        font-size: 20px;
+        font-weight: bold;
+      }
+    }
+    .ant-layout-content{
+      background-color: #f0f2f7 !important;
+    }
+  }
+}
+.person-info-div{
+  height: 64px;
+  float: right;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 20px;
+  .personal-info{
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 6px;
+    padding: 0 10px;
+    .personal-img{
+        width: 40px;
+        height: 40px;
+        border-radius: 40px;
+        overflow: hidden;
+        img{
+            max-width: 40px;
+            min-height: 40px;
+        }
+    }
+    .personal-summary{
+        font-size: 14px;
+        color: #1f2127;
+        line-height: 40px;
+        margin: 0 0 0 10px;
+        .account-number{
+          margin-right: 10px;
+        }
+    }
+    &:hover{
+      background-color: #f7f7f7;
+    }
+  }
+}
+
+.ant-drawer{
+  .ant-drawer-content-wrapper{
+    .ant-drawer-header{
+      border-bottom: 0;
+    }
+    .ant-drawer-body{
+      padding: 0 24px;
+      .ant-form{
+        .ant-form-item{
+          margin-bottom: 0;
+          .ant-row{
+            .ant-col{
+              font-weight: bold;
+              text-align: end;
+            }
+            .ant-form-item-label{
+              label{
+                color: rgb(171, 173, 187);
+                font-weight: 350;
+              }
+            }
+          }
+        }
+      }
+      .ant-tabs-top >.ant-tabs-nav:before{
+        border-bottom: 0;
+      }
+    }
+  }
+}
