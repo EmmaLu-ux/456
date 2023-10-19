@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { Layout, Menu, Button, ConfigProvider, Breadcrumb, Badge, Dropdown } from 'antd'
+import { Layout, Menu, Button, ConfigProvider, Dropdown } from 'antd'
 import zhCN from 'antd/locale/zh_CN'
 import {
   MenuFoldOutlined,
@@ -7,7 +7,6 @@ import {
   DashboardOutlined,
   TeamOutlined,
   DownOutlined,
-  CaretDownOutlined
 } from '@ant-design/icons'
 
 import './index.less'
@@ -73,7 +72,7 @@ export default function Index() {
   const [userData, setUserData] = useState({})
   const [breadcrumb, setBreadcrumb] = useState([])
   const [openKeys, setOpenKeys] = useState([])
-  const [unreadNum, setUnreadNum] = useState(0)
+  // const [unreadNum, setUnreadNum] = useState(0)
   const { clientRoutes } = useAppData()
   const c = clientRoutes[0]
 

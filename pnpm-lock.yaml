@@ -20,6 +20,9 @@ dependencies:
   framer-motion:
     specifier: ^10.16.4
     version: 10.16.4(react-dom@18.2.0)(react@18.2.0)
+  sm-crypto:
+    specifier: ^0.3.13
+    version: 0.3.13
   umi:
     specifier: ^4.0.80
     version: 4.0.80(@babel/core@7.22.17)(@types/react@18.2.21)(eslint@8.49.0)(postcss@8.4.29)(prettier@3.0.3)(react-dom@18.2.0)(react@18.2.0)(styled-components@6.0.7)(stylelint@14.16.1)(typescript@5.2.2)(webpack@5.88.2)
@@ -6349,6 +6352,10 @@ packages:
       argparse: 2.0.1
     dev: false
 
+  /jsbn@1.1.0:
+    resolution: {integrity: sha512-4bYVV3aAMtDTTu4+xsDYa6sy9GyJ69/amsu9sYF2zqjiEoZA5xJi3BrfX3uY+/IekIu7MwdObdbDWpoZdBv3/A==}
+    dev: false
+
   /jsesc@0.5.0:
     resolution: {integrity: sha512-uZz5UnB7u4T9LvwmFqXii7pZSouaRPorGs5who1Ip7VO0wxanFvBL7GkM6dTHlgX+jhBApRetaWpnDabOeTcnA==}
     hasBin: true
@@ -8911,6 +8918,12 @@ packages:
       ansi-styles: 4.3.0
       astral-regex: 2.0.0
       is-fullwidth-code-point: 3.0.0
+    dev: false
+
+  /sm-crypto@0.3.13:
+    resolution: {integrity: sha512-ztNF+pZq6viCPMA1A6KKu3bgpkmYti5avykRHbcFIdSipFdkVmfUw2CnpM2kBJyppIalqvczLNM3wR8OQ0pT5w==}
+    dependencies:
+      jsbn: 1.1.0
     dev: false
 
   /sonic-boom@2.8.0:

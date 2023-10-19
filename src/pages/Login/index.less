@@ -21,7 +21,7 @@
         top: 150px;
         left: 20%;
         width: 330px;
-        background-color: rgba(255, 255, 255, 0.9);
+        background-color: rgba(255, 255, 255, 1.0);
         padding: 50px 40px;
         border-radius: 30px;
         .title{
@@ -49,6 +49,8 @@
                 .login-form-button{
                     width: 100%;
                     border-radius: 10px;
+                    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+                    transition: box-shadow 0.3s;
                 }
                 .test-code{
                     width: 100px;
@@ -65,19 +67,19 @@
                     margin-bottom: 10px;
                     .ant-input-affix-wrapper{
                         border-radius: 10px;
-                        background: #fff;
+                        background: #f3f3f3;
                         border: none;
                         input {
                             padding: 5px 18px;
-                            background: #fff;
+                            background: #f3f3f3;
                         }
                     }
                     .ant-input-affix-wrapper:hover,
                     .ant-input-affix-wrapper.ant-input-affix-wrapper-focused {
-                        background: #fff;
+                        background: #f3f3f3;
                         input {
                             padding: 5px 18px;
-                            background: #fff;
+                            background: #f3f3f3;
                         }
                     }
                     .ant-space-item{
@@ -91,9 +93,23 @@
                     }
                     .ant-form-item-control-input-content{
                         position: relative;
+                        .ant-space-item{
+                            input{
+                                background-color: #f3f3f3;
+                            }
+                        }
                         .forget-code {
                             position: absolute;
                             right: 0;
+                            top: 0;
+                            transform: rotateY(-50%);
+                            color: #b0afaf;
+                            font-size: 8px;
+                            cursor: pointer;
+                        }
+                        .password-text{
+                            position: absolute;
+                            left: 0;
                             top: 0;
                             transform: rotateY(-50%);
                             color: #b0afaf;

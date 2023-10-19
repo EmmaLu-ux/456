@@ -7,7 +7,7 @@ import { message } from 'antd'
 
 // const baseURL = 'http://172.16.0.96:8081';
 // export const baseURL = 'http://172.16.0.166:8080/';
-export const baseURL = 'http://localhost:8001/';
+export const baseURL = 'http://localhost:5050/';
 
 const service = axios.create({
     baseURL,
